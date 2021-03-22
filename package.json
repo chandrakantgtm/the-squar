@@ -1,11 +1,14 @@
 {
   "name": "mdnext-twin-macro",
+  "homepage": "https://thasqua.github.io/the-squar",
   "description": "This serves as the base for creating new starters for MDNEXT using NextJS & MDX",
   "version": "1.0.1",
   "repository": "https://github.com/domitriusclark/mdnext-twin-macro.git",
   "author": "domitriusclark",
   "main": "next.config.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build",
     "dev": "next",
     "start": "next start -p $PORT",
@@ -30,6 +33,7 @@
     "dayjs": "^1.9.8",
     "fast-glob": "^3.2.4",
     "fuse.js": "^6.4.1",
+    "gh-pages": "^3.1.0",
     "gray-matter": "^4.0.2",
     "json-server": "^0.16.3",
     "next": "latest",
